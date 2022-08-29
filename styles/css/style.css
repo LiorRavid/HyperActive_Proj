@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&family=Passion+One&display=swap");
+* {
+  box-sizing: border-box;
+  direction: rtl;
+  font-family: "Assistant", sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+.main-header {
+  width: 100vw;
+  height: 7vh;
+}
+
+.main-header > .container {
+  width: 100%;
+  height: 100%;
+  max-width: 925px;
+}
+
+.logo {
+  height: 100%;
+  width: 150px;
+  position: relative;
+}
+
+.logo > img {
+  width: 135px;
+  height: 100%;
+}
+
+.logo-subtitle {
+  font-size: 0.6rem;
+  position: absolute;
+  z-index: 100;
+  bottom: 12px;
+  right: 15px;
+  font-weight: 700;
+}
+
+.hamburger-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 3.5rem;
+  height: 3rem;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  background-color: white;
+}
+
+.hamburger-btn > .bar {
+  width: 100%;
+  height: 5px;
+  background-color: #213a7f;
+}
+
+.nav-list {
+  list-style: none;
+  display: none;
+}
+
+.big-banner {
+  width: 100%;
+  height: 136px;
+  background: linear-gradient(155deg, #154b9c, #213b7f);
+  color: white;
+  flex-direction: column;
+}
+
+.big-banner > h4 {
+  font-size: 3rem;
+}
+
+.big-banner > h1 {
+  font-size: 4.5rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.small-banner {
+  width: 100%;
+  background-color: #eff6df;
+  margin-top: 5px;
+  padding: 7px;
+}
+
+.small-banner span {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.main {
+  width: 100%;
+  height: calc(93vh - 308px);
+  display: flex;
+  flex-direction: column;
+}
+
+.main .main-header {
+  width: 100%;
+  height: 120px;
+  margin: 25px 0;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.main-article {
+  height: 100%;
+  gap: 5px;
+}
+
+.main-article .profession {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  padding: 5px;
+  border: 1px solid lightgray;
+}
+
+.profession .profession-img {
+  height: 100%;
+  width: 15%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profession .profession-img::after {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 70%;
+  background-color: #4ac694;
+  border-radius: 10px;
+}
+
+.profession .profession-img img {
+  height: 100%;
+}
+
+.profession .profession-name {
+  display: flex;
+  align-items: center;
+}
+
+.main-article {
+  display: flex;
+  flex-direction: column;
+}
+
+.big-banner, .small-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-header > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
