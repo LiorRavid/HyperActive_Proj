@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .main-header {
   width: 100vw;
-  height: 7vh;
+  height: 6vh;
 }
 
 .main-header > .container {
@@ -45,9 +45,9 @@ h1, h2, h3, h4, h5, h6, p {
   font-size: 0.6rem;
   position: absolute;
   z-index: 100;
-  bottom: 12px;
+  bottom: 7px;
   right: 15px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .hamburger-btn {
@@ -76,18 +76,18 @@ h1, h2, h3, h4, h5, h6, p {
 
 .big-banner {
   width: 100%;
-  height: 136px;
+  height: 132px;
   background: linear-gradient(155deg, #154b9c, #213b7f);
   color: white;
   flex-direction: column;
 }
 
 .big-banner > h4 {
-  font-size: 3rem;
+  font-size: 2.2rem;
 }
 
 .big-banner > h1 {
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   font-weight: 800;
   line-height: 1;
 }
@@ -106,7 +106,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .main {
   width: 100%;
-  height: calc(93vh - 308px);
+  height: calc(90vh - 370px);
   display: flex;
   flex-direction: column;
 }
@@ -126,7 +126,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .main-article .profession {
   width: 100%;
-  height: 15%;
+  height: 11.5%;
   display: flex;
   padding: 5px;
   border: 1px solid lightgray;
@@ -145,8 +145,43 @@ h1, h2, h3, h4, h5, h6, p {
   display: inline-block;
   width: 4px;
   height: 70%;
-  background-color: #4ac694;
   border-radius: 10px;
+}
+
+.profession-img.ethical-hacking::after {
+  background-color: #4ac694;
+}
+
+.profession-img.system-administration::after {
+  background-color: #a3b6cc;
+}
+
+.profession-img.seo::after {
+  background-color: #3a5998;
+}
+
+.profession-img.qa::after {
+  background-color: #316cff;
+}
+
+.profession-img.qa::after {
+  background-color: #316cff;
+}
+
+.profession-img.ui-ux::after {
+  background-color: #f9cf58;
+}
+
+.profession-img.fullstack::after {
+  background-color: #9da6e9;
+}
+
+.profession-img.mobile::after {
+  background-color: #8e8e93;
+}
+
+.profession-img.embedded::after {
+  background-color: #475f8e;
 }
 
 .profession .profession-img img {
@@ -155,6 +190,15 @@ h1, h2, h3, h4, h5, h6, p {
 
 .profession .profession-name {
   display: flex;
+  align-items: center;
+  width: 82%;
+}
+
+.profession .arrow-icon {
+  font-size: 0.7em;
+  color: rgb(32, 32, 32);
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
