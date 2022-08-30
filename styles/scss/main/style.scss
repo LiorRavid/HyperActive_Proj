@@ -41,6 +41,10 @@ h1,h2,h3,h4,h5,h6,p{
     position: relative;
 }
 
+.logo:hover{
+    cursor: pointer;
+}
+
 .logo > img{
     width:135px;
     height: 100%;
@@ -63,7 +67,6 @@ h1,h2,h3,h4,h5,h6,p{
     width:3.5rem;
     height: 3rem;
     padding: 10px;
-    cursor: pointer;
     border-radius: 5px;
     border:none;
     background-color: white;
@@ -144,6 +147,11 @@ h1,h2,h3,h4,h5,h6,p{
     border: 1px solid lightgray;
 }
 
+.profession:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+
 .profession .profession-img{
     height: 100%;
     width: 15%;
@@ -214,6 +222,47 @@ h1,h2,h3,h4,h5,h6,p{
     align-items: center;
 }
 
+// CONTACT-BAR-BUTTONS
+.contact-bar-btns{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    height: 7vh;
+    width: 100%;
+    gap: 1px;
+}
+
+.details, .whatsup{
+    border: none;
+    background-color: #0066ff;
+    color: white;
+    width: 50%;
+    font-size: 1.5rem;
+}
+
+.details{
+    @extend %flex-center;
+}
+
+.details > a, .whatsup > a{
+    text-decoration: none;
+}
+
+.details > a:hover, .whatsup > a:hover{
+    text-decoration: underline;
+    color: white;
+    cursor: pointer;
+}
+
+.details img{
+    margin-left: 5px;
+}
+
+.whatsup::before{
+    font-family: "FontAwesome";
+    content: "\f232";
+    margin-left: 5px;
+}
 // PLACE-HOLDERS
 %flex-column{
     display: flex;
