@@ -120,9 +120,10 @@ h1,h2,h3,h4,h5,h6,p{
 // MAIN
 .main{
     width: 100%;
-    height:calc(90vh - 370px);
+    height:60vh;
     display: flex;
     flex-direction: column;
+    margin-bottom: 15vh;
 }
 
 .main .main-header{
@@ -134,7 +135,7 @@ h1,h2,h3,h4,h5,h6,p{
 }
 
 .main-article{
-    height: 100%;
+    height: calc(100% - 120px);
     @extend %flex-column;
     gap: 5px;
 }
@@ -263,6 +264,85 @@ h1,h2,h3,h4,h5,h6,p{
     content: "\f232";
     margin-left: 5px;
 }
+
+// COMPANY PROS
+.company-pros{
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABQAAAAP1AQMAAAAEpdAkAAAABlBMVEXt8vXp8PMayv0PAAADk0lEQVR42u3UMQHAIAADsH77UICQyZoHlOEEKVjY2SMRkaxyecpllMssl7dcvnI55bLLxYMe9KAHPehBD3rQgx70oAc96EEPetCDHvSgBz3oQQ960IMe9KAHPehBD3rQgx70oAc96EEPetCDHvSgBz3oQQ960IMe9KAHPehBD3rQgx70oAc96EEPetCDHvSgBz3oQQ960IMe9KAHPehBD3rQgx70oAc96EEPetCDHvSgBz3oQQ960IMe9KAHPehBD3rQgx70oAc96EEPetCDHvSgBz3oQQ960IMe9KAHPehBD3rQgx70oAc96EEPetCDHvSgBz3oQQ960IMe9KAHPehBD3rQgx70oAc96EEPetCDHvSgBz3oQQ960IMe9KAHPehBD3rQgx70oAc96EEPetCDHvSgBz3oQQ960IMe9KAHPehBD3rQgx70oAc96EEPetCDHvSgBz3oQQ960IMe9KAHPehBD3rQgx70oAc96EEPetCDHvSgBz3oQQ960IMe9KAHPehBD3rQgx70oAc96EEPetCDHvSgBz3oQQ960IMe9KAHPehBD3rQgx70oAc96EEPetCDHvSgBz3oQQ960IMe9KAHPehBD3rQgx70oAc96EEPetCDHvSgBz3oQQ960IMe9KAHPehBD3rQgx70oAc96EEPetCDHvSgBz3oQQ960IMe9KAHPehBD3rQgx70oAc96EEPetCDHvSgBz3oQQ960IMe9KAHPehBD3rQgx70oAc96EEPetCDHvSgBz3oQQ960IMe9KAHPehBD3rQgx70oAc96EEPetCDHvSgBz3oQQ960IMe9KAHPehBD3rQgx70oAc96EEPetCDHvSgBz3oQQ960IMe9KAHPehBD3rQgx70oAc96EEPetCDHvSgBz3oQQ960IMe9KAHPehBD3rQgx70oAc96EEPetCDHvSgBz3oQQ960IMe9KAHPehBD3rQgx70oAc96EEPetCDHvSgBz3oQQ960IMe9KAHPehBD3rQgx70oAc96EEPetCDHvSgBz3oQQ960IMe9KAHPehBD3rQgx70oAc96EEPetCDHvSgBz3oQQ960IMe9KAHPehBD3rQgx70oAc96EEPetCDHvSgBz3oQQ960IMe9KAHPehBD3rQgx70oAc96EEPetCDHvSgBz3oQQ960IMe9KAHPehBD3rQgx70oAc96EEPetCDHvSgBz3oQQ960IMe9OA/FyeQ9QbLaxohAAAAAElFTkSuQmCC);
+}
+.company-pros{
+    width: 100%;
+    padding: 10px 15px 60px 0; 
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.company-pros > h1{
+    width:100%;
+    height: 120px;
+    margin: 5px auto;
+    font-size: 2.9rem;
+    text-align: center;
+}
+
+// pros introduction
+.Pros-introduction{
+    width: 100%;
+    padding-top:1rem;
+    padding-right: 16px;
+}
+.Pros-introduction > p{
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.Pros-introduction > p:nth-child(2){
+    font-weight: bold ;
+}
+
+.Pros-introduction > p:nth-child(3){
+    color: #0000ff;
+}
+
+.Pros-introduction p > span{
+    font-weight: bold ;
+}
+
+// pros-competitors
+.competitors{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+.competitors p{
+    margin:20px 0;
+}
+
+.competitors span:nth-child(1){
+    font-weight: bold;
+}
+
+.competitors span:nth-child(2), span:nth-child(3){
+    text-decoration: underline;
+}
+
+
+// our pros
+.our-pros{
+    background-color:#eff6df;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+.our-pros p{
+    margin:20px 0;
+}
+
+.our-pros p > span{
+    font-weight: bold;
+}
+
 // PLACE-HOLDERS
 %flex-column{
     display: flex;
