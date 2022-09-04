@@ -288,66 +288,67 @@
         <h2 class="q-and-a-header">שאלות שכנראה תשאלו</h2>
         <div class="questions">
             <hr>
-            <div class="question" onclick="onToggleQuestion(`details-1`)">
+            <div id= "question1" class="question" onclick="onToggleQuestion(`details-1` , `question1`)">
                 <div class="text">מה זאת אומרת לא עבדת? לא שילמת!</div>
                 <i class="fa-solid fa-circle-arrow-down"></i>
             </div>
             <div id="details-1" class="question__details">מאוד פשוט, ללא אותיות קטנות, רק כשתתקבל לעבודה תשלם על הקורס שלמדת. לא התקבלת לעבודה? לא שילמת לנו שקל.</div>
             <hr>
-            <div class="question" onclick="onToggleQuestion(`details-2`)">
+            <div id= "question2" class="question" onclick="onToggleQuestion(`details-2`, `question2`)">
                 <div class="text">אני רוצה ללמוד אבל אין לי כסף, מה לעשות?</div>
                 <i class="fa-solid fa-circle-arrow-down"></i>
             </div>
             <div id="details-2" class="question__details">הכל בסדר. אצלנו זוֹ לא בעיה. לא תצטרכו לשלם מראש. לא תצטרכו לקחת הלוואה. שום דבר תשלמו על הלימודים רק אחרי שתתחילו לעבוד וגם אז התשלום יתבצע בתשלום חודשי קטן קבוע.</div>
             <hr>
-            <div class="question" onclick="onToggleQuestion(`details-3`)">
+            <div id= "question3" class="question" onclick="onToggleQuestion(`details-3`, `question3`)">
                 <div class="text">איפה יש לכם סניפים/ איפה אתם מלמדים?</div>
                 <i class="fa-solid fa-circle-arrow-down"></i>
             </div>
             <div id="details-3" class="question__details">בתקופת הקורונה אנחנו מלמדים בכל מקום בארץ on line באמצעות שיטות הדרכה מתקדמות.</div>
             <hr>
-            <div class="question" onclick="onToggleQuestion(`details-4`)">
+            <div id= "question4" class="question" onclick="onToggleQuestion(`details-4`, `question4`)">
                 <div class="text">מתי מתקיימים מיונים לקורסים השונים?</div>
                 <i class="fa-solid fa-circle-arrow-down"></i>
             </div>
             <div id="details-4" class="question__details">מיונים מתקיימים כל הזמן באופן שוטף.</div>
             <hr>
-            <div class="question" onclick="onToggleQuestion(`details-5`)">
+            <div id= "question5" class="question" onclick="onToggleQuestion(`details-5`, `question5`)">
                 <div class="text">מתי מתחילים קורסים?</div>
                 <i class="fa-solid fa-circle-arrow-down"></i>
             </div>
             <div id="details-5" class="question__details">קורסים מתחילים לאורך כל השנה באופן שוטף. בדרך כלל, מועמדים שעברו את תהליכי המיון בהצלחה, לא צריכים להמתין יותר מ-3-4 שבועות לתחילת ההכשרה.</div>
             <hr>
-            <div class="question" onclick="onToggleQuestion(`details-6`)">
+            <div id= "question6" class="question" onclick="onToggleQuestion(`details-6`, `question6`)">
                 <div class="text">האם ניתן לעבוד תוך כדי ההכשרות?</div>
                 <i class="fa-solid fa-circle-arrow-down"></i>
             </div>
             <div id="details-6" class="question__details">ניתן לעבוד תוך כדי ההכשרות אם בוחרים במסלול ערב.</div>
             <hr>
-            <div class="question" onclick="onToggleQuestion(`details-7`)">
+            <div id= "question7" class="question" onclick="onToggleQuestion(`details-7`, `question7`)">
                 <div class="text">איך אני יכול לדעת איזה מקצוע בהיי-טק מתאים לי?</div>
                 <i class="fa-solid fa-circle-arrow-down"></i>
             </div>
             <div id="details-7" class="question__details">הגש מועמדות באמצעות הטופס ונתחיל בתהליך האבחון, היעוץ והמיון המקצועי שלנו ללא כל עלות וללא כל מחויבות. נחזיק לך אצבעות שתמצא מתאים לאחד המקצועות בענף ההיי-טק!</div>
             <hr>
-            <div class="question" onclick="onToggleQuestion(`details-8`)">
+            <div id= "question8" class="question" onclick="onToggleQuestion(`details-8`, `question8`)">
                 <div class="text">סיימתי קורס בבית ספר אחר ולא מצאתי עבודה, מה אני יכול לעשות?</div>
                 <i class="fa-solid fa-circle-arrow-down"></i>
             </div>
             <div id="details-8" class="question__details">
-                <p>קודם כל אתה יכול להתנחם בכך שאינך יוצא דופן, חיפוש קצר בקבוצות פייסבוק יגלה לך שרוב בוגרי הקורסים נקלעים לאותה סיטואציה שאתה הגעת אליה.</p>
+                <p>קודם כל אתה יכול להתנחם בכך שאינך יוצא דופן, חיפוש קצר בקבוצות פייסבוק יגלה לך שרוב בוגרי הקורסים נקלעים לאותה סיטואציה שאתה הגעת אליה.</p><br>
                 <p>יש 3 אפשרויות למה סיימת קורס בבית ספר אחר ולא מצאת עבודה:</p>
                 <ol>
                     <li>הקורס שלמדת לא היה מקיף ו/או לא הועבר ברמה הנדרשת.</li>
                     <li>אתה לא מתאים לתחום אליו קיבלו אותך ללימודים.</li>
                     <li>אתה לא מתאים מבחינת הפרופיל האישיותי למקצוע שלמדת ו/או ״לא יודע איך לעבור ראיון״.</li>
                 </ol>
+                <br>
                 <p>הגש אלינו מועמדות באמצעות הטופס, נתחיל בתהליך האבחון, היעוץ והמיון המקצועי שלנו ללא כל עלות וללא כל מחויבות. בסיום התהליך נוכל לתת לך תשובה מדויקת מה הסיבה שלא התקבלת לעבודה.<br>
                 במידה ויתברר שאתה מתאים לתחום אותו למדת ובעל פרופיל אישיותי מתאים, נתאים לך השלמת הכשרה מותאמת אישית שתכניס אותך לענף. כאמור, על הכשרות אצלנו לא משלמים שקל אם לא מתקבלים לעבודה…
                 </p>
             </div>
             <hr>
-            <div class="question" onclick="onToggleQuestion(`details-9`)">
+            <div id= "question9" class="question" onclick="onToggleQuestion(`details-9`, `question9`)">
                 <div class="text">יש לי תואר אקדמי במדעי המחשב ולא מצאתי עבודה, מה אני יכול לעשות?</div>
                 <i class="fa-solid fa-circle-arrow-down"></i>
             </div>
@@ -368,7 +369,7 @@
                 במידה ויתברר שאתה מתאים למקצוע אליו ברצונך להתקבל,  נתאים לך השלמת הכשרה מותאמת אישית שתכניס אותך לענף. כאמור, על הכשרות אצלנו לא משלמים שקל אם לא מתקבלים לעבודה…
             </div>
             <hr>
-            <div class="question" onclick="onToggleQuestion(`details-10`)">
+            <div id= "question10" class="question" onclick="onToggleQuestion(`details-10`, `question10`)">
                 <div class="text">סיימתי קורס בבית ספר אחר ולא מצאתי עבודה, אני שוקל ללמוד תואר במדעי המחשב, זה יעזור לי?</div>
                 <i class="fa-solid fa-circle-arrow-down"></i>
             </div>
@@ -378,7 +379,7 @@
                 פנה אלינו להליך האבחון, היעוץ והמיון המקצועי שלנו ללא כל עלות וללא כל מחויבות.
             </div>
             <hr>
-            <div class="question" onclick="onToggleQuestion(`details-11`)">
+            <div id= "question11" class="question" onclick="onToggleQuestion(`details-11`, `question11`)">
                 <div class="text">אני מעונין להיות פרי לנסר, האם ניתן עדיין ללמוד אצלכם?</div>
                 <i class="fa-solid fa-circle-arrow-down"></i>
             </div>
@@ -386,7 +387,7 @@
                 מי שאיננו מעונין להתקבל לעבודה כשכיר אלא להיות פרילנסר עדיין נדרש לעבור את תהליכי המיון כדי לוודא את התאמתו לקורס ולמקצוע. במידה ויעבור את תהליכי המיון יוכל להתקבל ללימודים לאחר שיסדיר את התשלום על הקורס המבוקש.
             </div>
             <hr>
-            <div class="question" onclick="onToggleQuestion(`details-12`)">
+            <div id= "question12" class="question" onclick="onToggleQuestion(`details-12`, `question12`)">
                 <div class="text">כבר יש לי מקום עבודה, האם ניתן עדיין ללמוד אצלכם?</div>
                 <i class="fa-solid fa-circle-arrow-down"></i>
             </div>
@@ -394,7 +395,7 @@
                 מי שכבר יש לו מקום עבודה ואיננו מעונין להחליף את מקום העבודה שלו, עדיין נדרש לעבור את תהליכי המיון כדי לוודא את התאמתו לקורס ולמקצוע. במידה ויעבור את תהליכי המיון יוכל להתקבל ללימודים לאחר שיסדיר את התשלום על הקורס המבוקש.
             </div>
             <hr>
-            <div class="question" onclick="onToggleQuestion(`details-13`)">
+            <div id= "question13" class="question" onclick="onToggleQuestion(`details-13`, `question13`)">
                 <div class="text">איך מגישים מועמדות?</div>
                 <i class="fa-solid fa-circle-arrow-down"></i>
             </div>
@@ -406,34 +407,72 @@
         <h2 class="public-service-header">שירות לציבור</h2>
         <div class="questions">
             <hr>
-            <div class="question">
+            <div id="public-service1" class="question" onclick="onToggleQuestion(`public-service-1`, `public-service1`)">
                 <div class="text">לא התקבלתי אצלכם ללימודים בתחום שעניין אותי, מה לעשות?</div>
                 <i class="fa-solid fa-circle-arrow-down"></i>
             </div>
+            <div id="public-service-1" class="question__details">כפי שהוסבר באתר אנחנו ״מכללת בוטיק״, ולאור מודל ה״לא עבדת לא שילמת״ שלנו חייבים להיות סלקטיביים מאוד. בהתאם אנחנו יכולים לטפל רק בכמות מצומצמת של מועמדים איכותיים. מועמדים שלא מתקבלים ללימודים בתחום שעניין אותם, מקבלים מאיתנו תמיד יעוץ שמבהיר להם אם יש תחומים אחרים בהיי-טק שעשויים להתאים להם.
+                מעבר לכך, אתם מכירים את עצמכם הכי טוב. וגם אנחנו יכולים לטעות. אם לא התקבלתם אצלנו, אבל אתם משוכנעים ביכולות שלכם אל תתיאשו וחפשו נתיב לימודי במקום אחר.</div>
             <hr>
-            <div class="question">
+            <div id="public-service2" class="question" onclick="onToggleQuestion(`public-service-2`, `public-service2`)">
                 <div class="text">למרות שלא התקבלתי אצלכם, אני משוכנע ביכולות שלי ורוצה לחפש קורס במקום לימודי אחר. למה צריך לשים לב וממה צריך להזהר?</div>
                 <i class="fa-solid fa-circle-arrow-down"></i>
             </div>
+            <div id="public-service-2" class="question__details">צריך להזהר מפנטזיות ולהצמד לעובדות בבחינת קורסים ומקומות לימודיים. אדם שבונה לעצמו פנטזיה אופטימית גם נוטה להאמין לתרגילים שיווקיים מופרכים. ֿלא צריך לפתח פנטזיה לגבי שכר התחלתי גבוה, ולהזהר מטענות אנשי מכירות לגבי ״התחייבות לעבודה״, ״מלגת לימודים״ ו״אחוזי השמה״. </div>
             <hr>
-            <div class="question">
+            <div id="public-service3" class="question" onclick="onToggleQuestion(`public-service-3`, `public-service3`)">
                 <div class="text">כמה מרוויחים בענף ההיי-טק?</div>
                 <i class="fa-solid fa-circle-arrow-down"></i>
             </div>
+            <div id="public-service-3" class="question__details"> ההיי-טק היא עבודת השכיר הרווחית והמשתלמת ביותר.
+                יש גם אין ספור טבלאות שכר באינטרנט שמפיצות חברות השמה שמראות על כך: <a class="public-service-link" target="_blank" href="">טבלת שכר jobinfo</a> <a class="public-service-link" target="_blank" href="">טבלת שכר נישה</a> <a target="_blank" class="public-service-link" href="">טבלת שכר אתוסיה</a>
+                רוב בתי הספר מפנים לטבלאות השכר הללו ויוצרות את הרושם שהזהב נמצא ברחובות ופשוט צריך רק לאסוף אותו…
+                <br>
+                <br>
+                חשוב להבין שטבלאות השכר משקפות היטב את רמות השכר של עובדים בעלי 2 שנות ניסיון עבודה ומעלה.
+                לעומת זאת, הן בדרך כלל מפריזות בשכר של מועמדים חסרי ניסיון. חברות השמה בדרך כלל לא מטפלות בכלל בהשמה של בוגרים חסרי ניסיון אלא אם כן מדובר בבוגרי תואר ראשון בהצטיינות במדעי המחשב מהטכניון/אוניברסיטת תל אביב. משום כך השכר שמופיע בטבלאות לבוגרים חסרי ניסיון מופרז ולא משקף. חשוב להבין שקשה להכנס לעבודה ראשונה בענף כבוגר חסר ניסיון וציפיות השכר ההתחלתי צריכות להיות הרבה יותר צנועות. לא צריך להמתין יותר מדי, ״חגיגת השכר״ מתחילה אחרי שצוברים את 2 שנות הניסיון הקריטיות בעבודה…</div>
             <hr>
-            <div class="question">
+            <div id="public-service4" class="question" onclick="onToggleQuestion(`public-service-4`, `public-service4`)">
                 <div class="text">בכל מיני בתי ספר הבטיחו לי ״התחייבות לעבודה״ ב״חוזה חתום״, זה אמיתי?</div>
                 <i class="fa-solid fa-circle-arrow-down"></i>
             </div>
+            <div id="public-service-4" class="question__details">בקיצור - ממש לא.
+                <br>
+                <br>
+                בפירוט:<br>
+                אם ב״חוזה החתום״ היה כתוב שבכל מקרה כלל שכר הלימוד יוחזר אם לא תתקבל עבודה, היתה לזה משמעות.
+                <br>
+                <br>
+                בפועל מונח ה״התחיבות לעבודה״ משמש בתי ספר שונים כתרגיל שיווקי חסר כל משמעות. 
+                בדרך כלל ה״חוזה החתום״ מסייג את ההתחיבות בצורך לעמוד במגוון תנאים שאו שאינם אובייקטיביים, או שהינם בלתי אפשריים.
+                <br>
+                <br>
+                בנוסף בדרך כלל ״החוזה החתום״ מאפשר לבתי הספר לא לקיים את ההתחייבות לספק עבודה ו״לפצות״ את התלמיד בפיצוי חסר משמעות. חלק מבתי הספר מציעים החזר כספי שמהווה חלק זעום ממחיר הקורס שנגבה, חלק מבתי הספר מציעים ״לחזור על הקורס״ ללא תשלום נוסף, וחלק מבתי הספר לא מתביישים להציע ״פיצוי״ בדמות תשלום נוסף של התלמיד תחת ״הנחה״ על קורס נוסף…
+                <br>
+                <br>
+                האם צריך לפסול בתי ספר שמציעים התחייבויות שווא כאלה ולבחור באלו שלא? לאו דווקא. צריך פשוט להשוות בין בתי הספר תוך התעלמות מההתחייבות המדומה.</div>
             <hr>
-            <div class="question">
+            <div id="public-service5" class="question" onclick="onToggleQuestion(`public-service-5`, `public-service5`)">
                 <div class="text">בכל מיני בתי ספר הבטיחו לי מלגה, זה אמיתי?</div>
                 <i class="fa-solid fa-circle-arrow-down"></i>
             </div>
+            <div id="public-service-5" class="question__details">בקיצור - לא.
+                <br>
+                <br>
+                בפירוט:
+                <br>
+                מלגה זו הנחה מיוחדת שמקבלים יחידי סגולה כאשר כל שאר התלמידים משלמים יותר.
+                <br>
+                כשכל התלמידים מקבלים ״מלגה״ זה פשוט מצב בו מעלים את מחיר הקורס מראש ואז מורידים אותו למחיר האמיתי באמצעות ״מלגה״.</div>
             <hr>
-            <div class="question">
+            <div id="public-service6" class="question" onclick="onToggleQuestion(`public-service-6`, `public-service6`)">
                 <div class="text">בית ספר/מכללה אקדמית מסויימת טוען שיש לו אחוז השמה מסויים של הבוגרים בענף. זה אמיתי?</div>
                 <i class="fa-solid fa-circle-arrow-down"></i>
+            </div>
+            <div id="public-service-6" class="question__details">אף אחד לא יודע. כנראה שלא.
+                <br>
+                <br>
+                אין שום פיקוח על הענף ואין שום דרך אמיתית לבדוק את הנתונים. בפועל כל איש מכירות זורק למועמדים את המספרים שלדעתו ישכנעו אותם להרשם.
             </div>
             <hr>
         </div>

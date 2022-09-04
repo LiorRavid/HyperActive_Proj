@@ -495,10 +495,19 @@ h1,h2,h3,h4,h5,h6,p{
     color:#007cba;
 }
 
-.question__details{
+.question__details,.public-service__details{
     max-height: 0;
     overflow: hidden;
+    padding-left: 10px;
+    padding-right: 10px;
     transition: all 0.2s ease-in-out;
+}
+
+.public-service-link{
+    display: block;
+    color: #00f;
+    text-decoration: underline;
+    font-weight: 600;
 }
 
 // FOOTER
