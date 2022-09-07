@@ -18,12 +18,12 @@
                 <img src="./styles/scss/imgs/hyperactive_logo.png" alt="" />
                 <div class="logo-subtitle">בית הספר להיי-טק הטוב בישראל</div>
             </div>
-            <div id="nav-bar" class="nav-bar">
+            <div id="nav-bar" class="nav-bar hidden">
                 <ul class="nav-list">
                     <li class="nav-link">בית</li>
-                    <li id="careers" class="nav-link" onclick="onOpenCareers()" onmouseenter="onOpenCareersDesktop()" onmouseleave="onCloseCareersDesktop()" >קריירות
+                    <li id="careers" class="nav-link" onclick="onOpenCareers()" onmouseenter="onOpenCareersDesktop()">קריירות
                         <i class="fa-sharp fa-solid fa-caret-down"></i>
-                        <div id="careers__details" class="careers__details hidden">
+                        <div id="careers__details" class="careers__details hidden" onmouseleave="onCloseCareersDesktop()">
                             <div class="career-name">סייבר ואבטחת מידע | ethical hacking</div>
                             <div class="career-name">ניהול רשתות ומחשוב | system administration</div>
                             <div class="career-name">שיווק דיגיטלי | seo/social/sales&marketing</div>
@@ -136,22 +136,22 @@
                 </article>
             </section>
             <div class="main-form">
-                <form action="">
+                <form action="" onsubmit=" onOpenThankYouModal(event)">
                     <h2>רוצה לשמוע עוד?</h2>
                     <div class="name">
                         <label for="name">שם מלא</label>
                         <div class="seperator"></div>
-                        <input id="name" type="text">
+                        <input id="name" type="text" placeholder="" >
                     </div>
                     <div class="phone">
                         <label for="phone">טלפון</label>
                         <div class="seperator"></div>
-                        <input id="phone" type="text">
+                        <input id="phone" type="text" placeholder="" >
                     </div>
                     <div class="email">
                         <label for="email">אי-מייל</label>
                         <div class="seperator"></div>
-                        <input id="email" type="email">
+                        <input id="email" type="email" placeholder="">
                     </div>
                     <div class="terms">
                         <div class="checkbox-container">
@@ -317,6 +317,7 @@
         <h1 class="process-header">איך זה עובד</h1>
         <div class="categories">
             <div class="category-container">
+                <span class="arrow-left"></span>
                 <div id="category1" class="category" onclick="onOpenCategory('category-details-1','category1')">
                     <div class="text">אבחון, יעוץ ומיון</div>
                     <i class="fa-light fa-plus"></i>
@@ -334,6 +335,7 @@
                 </div>
             </div>
             <div class="category-container">
+                <span class="arrow-down"></span>
                 <div id="category2" class="category" onclick="onOpenCategory('category-details-2','category2')">
                     <div class="text">מסלול הכשרה</div>
                     <i class="fa-light fa-plus"></i>
@@ -361,6 +363,7 @@
                 </div>
             </div>
             <div class="category-container">
+                <span class="arrow-right"></span>
                 <div id="category4" class="category" onclick="onOpenCategory('category-details-4','category4')">
                     <div class="text">קריירה חדשה</div>
                     <i class="fa-light fa-plus"></i>
@@ -630,21 +633,21 @@
     <footer>
         <h3>צרו קשר לכל שאלה או לקביעת פגישת ייעוץ (מלאו פרטיכם ונחזור אליכם בהקדם)</h3>
         <div class="form-container">
-            <form action="">
+            <form action="" onsubmit=" onOpenThankYouModal(event)">
                 <div class="name">
                     <label for="name">שם מלא</label>
                     <div class="seperator"></div>
-                    <input id="name" type="text">
+                    <input id="name" type="text" >
                 </div>
                 <div class="phone">
                     <label for="phone">טלפון</label>
                     <div class="seperator"></div>
-                    <input id="phone" type="text">
+                    <input id="phone" type="text" >
                 </div>
                 <div class="email">
                     <label for="email">אי-מייל</label>
                     <div class="seperator"></div>
-                    <input id="email" type="email">
+                    <input id="email" type="email" >
                 </div>
                 <div class="submit-container">
                     <button class="submit">דברו איתי!</button>
@@ -667,6 +670,47 @@
         <button class="whatsup"><a>וואטסאפ</a></button>
     </section>
     <div class="contact-desktop-btn"><p>היי! אנחנו פה,יש לך שאלה?</p></div>
+    <section id="pop-up-modal-container" class="pop-up-modal-container">
+        <div class="pop-up-modal">
+            <i class="fa-regular fa-x pop-up-modal-x" onclick="onCloseModal()"></i>
+            <h3>מעוניינים לקבל ייעוץ חינם לגבי לימודי הייטק? השאירו פרטים!</h3>
+            <div class="modal-form">
+                <form action="" onsubmit="onOpenThankYouModal(event)">
+                    <div class="name">
+                        <input id="name" type="text" placeholder="שם מלא">
+                    </div>
+                    <div class="phone">
+                        <input id="phone" type="text" placeholder="טלפון">
+                    </div>
+                    <div class="email">
+                        <input id="email" type="email" placeholder="אי-מייל">
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="approve-checkbox">
+                        <label for="approve-checkbox">אני מאשר קבלת עדכונים ומבצעים מהייפראקטיב.</label>
+                    </div>
+                    <div class="submit-container">
+                        <button class="submit">דברו איתי
+                            <i class="fas fa-chevron-left" aria-hidden="true"></i>
+                            <i class="fas fa-chevron-left" aria-hidden="true"></i>
+                        </button>
+                    </div>
+            </form>
+        </div>
+    </section>
+    <section id="thank-you-modal-container" class="thank-you-modal-container hidden">
+        <div class="thank-you-modal">
+            <i class="fas fa-times" aria-hidden="true" onclick="onCloseThankYouModal()"></i>
+            <h3>תודה רבה!</h3>
+            <p>עשית את הצעד הראשון בהסבה
+                <br>
+                מקצועית לענף ההיי-טק. ניצור איתך
+                <br>
+                קשר בהקדם.
+            </p>
+            <i class="far fa-check-circle" aria-hidden="true"></i>
+        </div>
+    </section>
     <script src="./js/main.js"></script>
 </body>
 

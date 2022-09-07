@@ -1,8 +1,15 @@
 'use strict'
 
 function onInit(){
+    let windowWidth = window.innerWidth;
+    const navBar = document.getElementById('nav-bar');
+    if(windowWidth > 925){
+        if(navBar.classList.contains("hidden")){
+            navBar.classList.remove("hidden");
+        }
+    }
     window.addEventListener('resize',(event)=>{
-        let windowWidth = event.target.innerWidth;
+        let windowWidth = window.innerWidth;
         const navBar = document.getElementById('nav-bar');
         if(windowWidth > 925){
             if(navBar.classList.contains("hidden")){
@@ -14,7 +21,9 @@ function onInit(){
                 navBar.classList.add("hidden");
             }
         }
-    })
+    });
+    const modal=document.getElementById('pop-up-modal-container');
+    modal.classList.add('modal-down');
 }
 
 function onToggleQuestion(id,id2){
@@ -52,14 +61,14 @@ function onOpenCategory(idDetails,idCategory){
 }
 
 function onHamburgerClick(){
-    const navBar = document.getElementById('nav-bar');
-    navBar.classList.toggle("hidden");
     const hamburgerBtn1 = document.getElementById('bar1');
     const hamburgerBtn2 = document.getElementById('bar2');
     const hamburgerBtn3 = document.getElementById('bar3');
-    hamburgerBtn1.classList.add('bar1');
-    hamburgerBtn2.classList.add('bar2');
-    hamburgerBtn3.classList.add('bar3');
+    hamburgerBtn1.classList.toggle('bar1');
+    hamburgerBtn2.classList.toggle('bar2');
+    hamburgerBtn3.classList.toggle('bar3');
+    const navBar = document.getElementById('nav-bar');
+    navBar.classList.toggle("hidden");
 }
 
 function onOpenCareers(){
@@ -79,4 +88,20 @@ function onCloseCareersDesktop(){
         const careerDetails = document.getElementById('careers__details');
         careerDetails.classList.add("hidden");
     }
+}
+
+function onCloseModal(){
+        const modal = document.getElementById('pop-up-modal-container');
+        modal.classList.remove("modal-down");
+}
+
+function onOpenThankYouModal(event){
+    event.preventDefault();
+    const modal = document.getElementById('thank-you-modal-container');
+    modal.classList.remove("hidden");
+}
+
+function onCloseThankYouModal(){
+    const modal = document.getElementById('thank-you-modal-container');
+    modal.classList.add("hidden");
 }
